@@ -11,9 +11,15 @@ public class BaseGrid : MonoBehaviour {
     public GameObject[] GridNodePrefab;
     public float offset;
 
+
+    private static ILogger logger = Debug.unityLogger;
+    private Logger DebugLogger;
+
     private void Start()
     {
+        DebugLogger = new Logger("BaseLog.txt");
         GenerateGrid(5, 10);
+
     }
 
     public void GenerateGrid(int maxX, int maxZ)
@@ -38,7 +44,7 @@ public class BaseGrid : MonoBehaviour {
             }
         }
 
-        Debug.Log("Generation Of Grid Completed");
+        logger.Log("BaseGrid : Grid Generation Success");
     }
 
 }
