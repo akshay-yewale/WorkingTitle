@@ -15,6 +15,12 @@ struct PlayerData
 
 public class GlobalDataHolder : MonoBehaviour {
 
+    [SerializeField]
+    int GridSize__X;
+
+    [SerializeField]
+    int GridSize__Z;
+    
 
     private static GlobalDataHolder _instance = null;
     public static GlobalDataHolder Instance
@@ -54,8 +60,8 @@ public class GlobalDataHolder : MonoBehaviour {
 
     void InitializeBaseBuildingData()
     {
-        baseBuildingVariables.GridSizeX = 10;
-        baseBuildingVariables.GridSizeZ = 3;
+        baseBuildingVariables.GridSizeX = GridSize__X;
+        baseBuildingVariables.GridSizeZ = GridSize__Z;
     }
 
     
