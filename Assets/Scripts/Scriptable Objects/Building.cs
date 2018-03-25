@@ -16,7 +16,6 @@ public class Building : ScriptableObject {
     public int level;
     public BuidlingType type;
     public float health;
-
     //call this function in Monobehaviour OnValidateFunction
     void Validation()
     {

@@ -20,7 +20,8 @@ public class FireProjectile : MonoBehaviour {
 
     void Fire()
     {
-        GameObject _bullet = Instantiate(BulletPrefab, this.transform.position, Quaternion.identity);
+        GameObject _bullet = Instantiate(BulletPrefab, this.transform.position, this.transform.rotation);
+        _bullet.GetComponent<BulletProperties>().Initialized(transform, 5.0f);
     }
 
 }

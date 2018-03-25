@@ -247,6 +247,8 @@ MonoBehaviour:
   - {fileID: 1094163837699232, guid: 684ddd291ece37946b0278c880227aaf, type: 2}
   - {fileID: 1094163837699232, guid: 9c3b5d1488bfe6341aba18fc5d66c986, type: 2}
   offset: 1
+  maxSizeGridX: 3
+  maxSizeGridZ: 10
 --- !u!1 &430803906
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1578993755
 MonoBehaviour:
   m_ObjectHideFlags: 0

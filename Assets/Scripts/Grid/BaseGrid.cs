@@ -11,6 +11,8 @@ public class BaseGrid : MonoBehaviour {
     public GameObject[] GridNodePrefab;
     public float offset;
 
+    public int maxSizeGridX;
+    public int maxSizeGridZ;
 
     private static ILogger logger = Debug.unityLogger;
     private Logger DebugLogger;
@@ -18,7 +20,13 @@ public class BaseGrid : MonoBehaviour {
     private void Start()
     {
         DebugLogger = new Logger("BaseLog.txt");
-        GenerateGrid(5, 10);
+
+
+        int[] _GridParameters = GlobalDataHolder.Instance.GetBaseBuildingVariable();
+        maxSizeGridX = _GridParameters[0];
+        maxSizeGridZ = _GridParameters[1];
+
+        GenerateGrid(maxSizeGridX, maxSizeGridZ);
 
     }
 
