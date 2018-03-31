@@ -139,9 +139,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1713672237386610}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.663, z: 0.283}
-  m_LocalScale: {x: -0.008054376, y: -0.008054373, z: -0.008054373}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.6630001, z: 0.8600006}
+  m_LocalScale: {x: -1.0845368, y: -0.008054373, z: -0.046853423}
   m_Children: []
   m_Father: {fileID: 4501011899493156}
   m_RootOrder: 5
@@ -192,7 +192,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1026294089613370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29682446, y: 35.572933, z: -27.642704}
+  m_LocalPosition: {x: -3.6859546, y: 31.766302, z: -30.224192}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4443479828481046}
@@ -509,7 +509,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1200344314964962, guid: 41781d7d5b1df5947a818ffe8035302e,
     type: 2}
   rateOfFire: 1
-  shouldFire: 0
+  shouldFire: 1
 --- !u!136 &136019578035204928
 CapsuleCollider:
   m_ObjectHideFlags: 1
