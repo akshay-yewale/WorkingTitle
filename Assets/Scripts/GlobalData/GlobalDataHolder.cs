@@ -48,7 +48,7 @@ public class GlobalDataHolder : MonoBehaviour {
         if (_instance == null)
         {
             _instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            //DontDestroyOnLoad(this.gameObject);
             InitializeBaseBuildingData();
            
         }
