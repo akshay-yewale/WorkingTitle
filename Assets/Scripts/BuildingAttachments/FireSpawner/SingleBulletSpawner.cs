@@ -28,6 +28,7 @@ public class SingleBulletSpawner : MonoBehaviour {
         {
             GameObject g0 = Instantiate(bulletPrefab, transform.position, transform.rotation);
             g0.GetComponent<B_SingleBullet>().Initialize();
+            g0.GetComponent<B_SingleBullet>().direction = this.transform.forward;
         }
     }
     
