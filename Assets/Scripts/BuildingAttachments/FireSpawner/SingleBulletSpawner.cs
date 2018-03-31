@@ -7,7 +7,7 @@ public class SingleBulletSpawner : MonoBehaviour {
     [Header("Bullet Prefab and Properties")]
     public GameObject bulletPrefab;
     [SerializeField]
-    float rateOfFire = 1.0f;
+    float rateOfFire;
     
 
     [SerializeField]
@@ -18,7 +18,7 @@ public class SingleBulletSpawner : MonoBehaviour {
         if (bulletPrefab == null)
             Debug.LogError("Bullet Prefab is not assigned");
         
-        InvokeRepeating("Fire", 1.0f,rateOfFire);
+        InvokeRepeating("Fire", 1.0f,1/rateOfFire);
     }
 
     void Fire()
