@@ -1,1 +1,7 @@
 BaseGrid : Grid Generation Success
+Import Structure Initialize
+ImportStructures Building
+ImportStructures Building
+ImportStructures Building
+ImportStructures Building
+ImportStructures Building

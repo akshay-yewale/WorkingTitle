@@ -1,2 +1,0 @@
-InterfaceManager is Initialized
-BaseGrid : Grid Generation Success
