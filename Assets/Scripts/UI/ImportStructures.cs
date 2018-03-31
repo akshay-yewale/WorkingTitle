@@ -9,7 +9,7 @@ public class ImportStructures : MonoBehaviour {
 
     List<BuildingData> BuildingList;
     
-    List<>
+
     private void Awake()
     {
         if(_instance == null)
@@ -50,6 +50,8 @@ public class ImportStructures : MonoBehaviour {
             Debug.Log("ImportStructures Building");
             GameObject g0 = Instantiate(BuildingButton);
             g0.transform.SetParent(this.transform);
+            g0.transform.transform.position = new Vector3(0, 0, 0);
+
         }
     }
 
