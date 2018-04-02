@@ -509,7 +509,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1200344314964962, guid: 41781d7d5b1df5947a818ffe8035302e,
     type: 2}
   rateOfFire: 1
-  shouldFire: 1
+  shouldFire: 0
 --- !u!136 &136019578035204928
 CapsuleCollider:
   m_ObjectHideFlags: 1

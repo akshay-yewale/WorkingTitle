@@ -1,14 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ImportStructures : MonoBehaviour {
 
     [Header("Base Building Button Prefab")]
     public GameObject BuildingButton;
 
+    [Header("Horizantal Scroller")]
+    [SerializeField]private GameObject horizantalScroller;
+
     List<BuildingData> BuildingList;
-    
+    int offset = 0;
 
     private void Awake()
     {
@@ -45,16 +50,31 @@ public class ImportStructures : MonoBehaviour {
 
     void StimulatePanel()
     {
+        
         for(int index = 0; index < BuildingList.Count; index++)
         {
-            Debug.Log("ImportStructures Building");
+            
             GameObject g0 = Instantiate(BuildingButton);
-            g0.transform.SetParent(this.transform);
-            g0.transform.transform.position = new Vector3(0, 0, 0);
-
+            string name = BuildingList[index].name;
+            g0.GetComponent<Button>().onClick.AddListener(() => OnBuildingButtonClicked(name));
+            g0.GetComponent<Image>().sprite = BuildingList[index].icon;
+            g0.transform.SetParent(horizantalScroller.transform);
+            //g0.transform.transform.position = new Vector3(0, 0, 0); 
+            RectTransform rt = g0.GetComponent<RectTransform>();
+            rt.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, index * 100 , rt.rect.width);
+            rt.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, 2.0f , rt.rect.height);
+            //rt.position = new Vector3(rt.position.x + (index * 100), -65.0f, rt.position.z);
+            
         }
     }
 
+
+    public void Something() { }
+
+    public void OnBuildingButtonClicked(string name)
+    {
+        BuildingEditManager.Instance.OnBuildingSelected(name);
+    }
 
     public void Destroy()
     {
