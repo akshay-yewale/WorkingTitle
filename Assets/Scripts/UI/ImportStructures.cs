@@ -14,6 +14,7 @@ public class ImportStructures : MonoBehaviour {
 
     List<BuildingData> BuildingList;
     int offset = 0;
+
     private void Awake()
     {
         if(_instance == null)
@@ -63,6 +64,7 @@ public class ImportStructures : MonoBehaviour {
             rt.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, index * 100 , rt.rect.width);
             rt.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, 2.0f , rt.rect.height);
             //rt.position = new Vector3(rt.position.x + (index * 100), -65.0f, rt.position.z);
+            
         }
     }
 
