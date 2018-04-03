@@ -14,18 +14,19 @@ public class Collector : MonoBehaviour
     private GameObject cube;
     public Material mat;
     [SerializeField]
-    CollectorType collectorType;
+    CollectorType collectorType = CollectorType.Fuel;
     [SerializeField]
-    int generationRate;
+    float generationRate = 1.0f;
     [SerializeField]
-    int storageCapacity;
-    int fuelStored = 0;
+    int storageCapacity = 10;
+    [SerializeField]
+    float fuelStored = 0;
     [SerializeField]
     bool isUpgrading = false;
 
 
     #region SETTERS&GETTERS
-    public int GenerationRate
+    public float GenerationRate
     {
         get
         {
@@ -51,7 +52,7 @@ public class Collector : MonoBehaviour
         }
     }
 
-    public int FuelStored
+    public float FuelStored
     {
         get
         {
@@ -97,11 +98,13 @@ public class Collector : MonoBehaviour
 
     private void Generate()
     {
-        if (!IsUpgrading && FuelStored < StorageCapacity)
+        if (IsUpgrading && FuelStored < StorageCapacity)
         {
-            FuelStored += 1;
-        } else if (!IsUpgrading && FuelStored == StorageCapacity)
+            FuelStored += 1.0f;
+        }
+        else if (IsUpgrading && FuelStored >= StorageCapacity)
         {
+            FuelStored = Mathf.Clamp(FuelStored, 0, StorageCapacity);
             cube.GetComponent<MeshRenderer>().material = mat;
         }
     }

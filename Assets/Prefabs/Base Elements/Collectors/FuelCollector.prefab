@@ -133,11 +133,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1490033387686296}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e013b7800f2d0b043bc99fcbbb4aef1a, type: 3}
+  m_Script: {fileID: 11500000, guid: 610ce20aac4b0b941a4bb3092b568a62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cube: {fileID: 1788231321903684}
-  mat: {fileID: 2100000, guid: 66ce27f5d09882b4bb215890cfa31045, type: 2}
+  mat: {fileID: 2100000, guid: e3f53fa4409a2724b939e072b1c5e672, type: 2}
+  collectorType: 0
   generationRate: 1
-  storageCapacity: 5
-  isUpgrading: 0
+  storageCapacity: 10
+  fuelStored: 0
+  isUpgrading: 1
