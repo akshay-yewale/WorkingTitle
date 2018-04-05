@@ -21,7 +21,7 @@ public class Collector : MonoBehaviour
     int storageCapacity;
     int fuelStored = 0;
     [SerializeField]
-    bool isUpgrading = false;
+    bool isCollectionEnabled = false;
 
 
     #region SETTERS&GETTERS
@@ -64,16 +64,16 @@ public class Collector : MonoBehaviour
         }
     }
 
-    public bool IsUpgrading
+    public bool IsCollectionEnabled
     {
         get
         {
-            return isUpgrading;
+            return isCollectionEnabled;
         }
 
         set
         {
-            isUpgrading = value;
+            isCollectionEnabled = value;
         }
     }
     #endregion
@@ -97,10 +97,10 @@ public class Collector : MonoBehaviour
 
     private void Generate()
     {
-        if (!IsUpgrading && FuelStored < StorageCapacity)
+        if (!IsCollectionEnabled && FuelStored < StorageCapacity)
         {
             FuelStored += 1;
-        } else if (!IsUpgrading && FuelStored == StorageCapacity)
+        } else if (!IsCollectionEnabled && FuelStored == StorageCapacity)
         {
             cube.GetComponent<MeshRenderer>().material = mat;
         }
