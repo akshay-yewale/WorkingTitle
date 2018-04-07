@@ -30,4 +30,5 @@ public class Storage : MonoBehaviour {
 	void Update () {
 		
 	}
+
 }
