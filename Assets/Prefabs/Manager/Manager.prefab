@@ -1,0 +1,262 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1085878521432794}
+  m_IsPrefabParent: 1
+--- !u!1 &1085878521432794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4905804315510304}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1200888180639668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4649801155580052}
+  - component: {fileID: 114310670997742954}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1264357149336722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4674788454716212}
+  - component: {fileID: 114147432639397282}
+  m_Layer: 0
+  m_Name: InterfaceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1667752981501912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4617950078842494}
+  - component: {fileID: 114391931385331436}
+  m_Layer: 0
+  m_Name: BuildingEditManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1897782468733600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4128437684506812}
+  - component: {fileID: 114791672115253074}
+  - component: {fileID: 114860922198290100}
+  m_Layer: 0
+  m_Name: GlobalDataHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4128437684506812
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1897782468733600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905804315510304}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4617950078842494
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1667752981501912}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905804315510304}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4649801155580052
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1200888180639668}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905804315510304}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4674788454716212
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1264357149336722}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905804315510304}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4905804315510304
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1085878521432794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4128437684506812}
+  - {fileID: 4649801155580052}
+  - {fileID: 4674788454716212}
+  - {fileID: 4617950078842494}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114147432639397282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1264357149336722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae4aa47e758d404cb48499bf8a7da3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isUIHovered: 0
+--- !u!114 &114310670997742954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1200888180639668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f508be55f10a86845b68e988a9f8db08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GridNodePrefab:
+  - {fileID: 1094163837699232, guid: 9c3b5d1488bfe6341aba18fc5d66c986, type: 2}
+  - {fileID: 1094163837699232, guid: 684ddd291ece37946b0278c880227aaf, type: 2}
+  offset: 1
+  maxSizeGridX: 0
+  maxSizeGridZ: 0
+--- !u!114 &114391931385331436
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1667752981501912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0919559a3ca49a147bf12f82adf60b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114791672115253074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1897782468733600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7986396ee85de7c4da5ed86b13e40e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GridSize__X: 3
+  GridSize__Z: 6
+--- !u!114 &114860922198290100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1897782468733600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3aab1c3ea1d154dbaa79b051d8e00b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseBuildingList:
+  - name: ArcherTower
+    UniqueId: 1001
+    buildingPrefab: {fileID: 1026294089613370, guid: c2709caabba9f984e9ce23e4dc697ecf,
+      type: 2}
+    icon: {fileID: 21300000, guid: 91f0b0509e3943e489fcb1bc93f6e8db, type: 3}
+  - name: TwinRocketBlaster
+    UniqueId: 1002
+    buildingPrefab: {fileID: 1957129501944966, guid: eb2a4223264bcb64b89b2fb4ff817dfa,
+      type: 2}
+    icon: {fileID: 21300000, guid: 5c2bc34baa5eecd499912342a6632082, type: 3}
+  - name: HeadQuaters
+    UniqueId: 1003
+    buildingPrefab: {fileID: 1810822153002830, guid: 63e8929596c86834c8766a80d888bcfd,
+      type: 2}
+    icon: {fileID: 21300000, guid: 3beb70491d0328a4d9001309a680ce3a, type: 3}
+  - name: FuelCollector
+    UniqueId: 1004
+    buildingPrefab: {fileID: 1490033387686296, guid: 0538260c4ca3c59419f7c2846c3d7931,
+      type: 2}
+    icon: {fileID: 21300000, guid: 812614a12a62af2469a03e06e7ee3f68, type: 3}
+  - name: MetalCollector
+    UniqueId: 1005
+    buildingPrefab: {fileID: 1762841985172866, guid: 0f0d07f7b8875814286173f0a8f17ac4,
+      type: 2}
+    icon: {fileID: 21300000, guid: a0a7a72b5f5c3384e8cb7dac33215fbf, type: 3}
+  - name: FeulStorage
+    UniqueId: 1006
+    buildingPrefab: {fileID: 1728895775288014, guid: 7e964e0873ad4a446b1cdbad561d9c1f,
+      type: 2}
+    icon: {fileID: 21300000, guid: 5d34af7d2396d3749a7bd7e03408a059, type: 3}
+  - name: MetalStorage
+    UniqueId: 1007
+    buildingPrefab: {fileID: 1101336040011940, guid: 8d72d933d3aa34f4e8f11520f4a1690a,
+      type: 2}
+    icon: {fileID: 21300000, guid: 94d96774ae75c0b4ab1924c8c7985034, type: 3}
