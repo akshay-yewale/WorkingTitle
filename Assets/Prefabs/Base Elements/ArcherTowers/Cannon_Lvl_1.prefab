@@ -508,7 +508,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1200344314964962, guid: 41781d7d5b1df5947a818ffe8035302e,
     type: 2}
+  numberOfBulletsSpawn: 1
   rateOfFire: 1
+  angleOfSpead: -5
   shouldFire: 0
 --- !u!136 &136019578035204928
 CapsuleCollider:
