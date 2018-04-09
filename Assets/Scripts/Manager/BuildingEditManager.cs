@@ -69,6 +69,7 @@ public class BuildingEditManager : MonoBehaviour {
                 if(Input.GetMouseButtonDown(0) && !InterfaceManager.Instance.isUIHovered && currentNode.IsEmpty())
                 {
                     GameObject buildingPlaced = Instantiate(cursorPointSelectedBuilding, worldPosition, Quaternion.identity);
+                    buildingPlaced.transform.SetParent(this.transform);
                     currentNode.SetIsEmpty(false);
                     RemoveCursorContents();
                 }

@@ -6,11 +6,11 @@ public class B_SingleBullet : MonoBehaviour {
 
     bool isHoming = false;
     float lifeTime = 1.0f;
-    float speed = 10.0f;
+    float speed = 2.0f;
 
     public Vector3 direction;
 
-    public void Initialize(float i_lifeTime = 4.0f, float i_speed = 10.0f, bool i_isHoming = false)
+    public void Initialize(float i_lifeTime = 4.0f, float i_speed = 2.0f, bool i_isHoming = false)
     {
         lifeTime = i_lifeTime;
         speed = i_speed;
