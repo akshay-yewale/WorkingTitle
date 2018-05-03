@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class DontDestroyOnLoad : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-        DontDestroyOnLoad(this.gameObject);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+
+    // Use this for initialization
+    void Start() {
+
+    }
+
+    private void OnInitialize()
+    {
+            DontDestroyOnLoad(this.gameObject);
+        
+    }
 }

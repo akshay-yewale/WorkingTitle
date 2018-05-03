@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4501011899493156}
+  - component: {fileID: 114968983871185860}
   m_Layer: 0
   m_Name: Cannon_Lvl_1
   m_TagString: Untagged
@@ -512,6 +513,17 @@ MonoBehaviour:
   rateOfFire: 1
   angleOfSpead: -5
   shouldFire: 0
+--- !u!114 &114968983871185860
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1026294089613370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ddd8816c93e84248bea23550f7a02fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136019578035204928
 CapsuleCollider:
   m_ObjectHideFlags: 1
