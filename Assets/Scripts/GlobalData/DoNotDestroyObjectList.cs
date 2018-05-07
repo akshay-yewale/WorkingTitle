@@ -45,5 +45,5 @@ public class DoNotDestroyObjectList : MonoBehaviour {
 public struct GameObjectComponentStruct
 {
     public GameObject gameObject;
-    public List<string>
+    public List<string> ComponentList;
 }

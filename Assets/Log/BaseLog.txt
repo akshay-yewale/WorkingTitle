@@ -1,0 +1,2 @@
+BaseGrid : Grid Generation Success
+Import Structure Initialize
