@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4986811391720798}
   - component: {fileID: 114510351411877290}
   m_Layer: 0
-  m_Name: Metal Storage
+  m_Name: Metal_Storage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
