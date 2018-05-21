@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - BoxColliderForInput
+  - PlaneBullet
   layers:
   - Default
   - TransparentFX

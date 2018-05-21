@@ -71,6 +71,7 @@ public class BuildingEditManager : MonoBehaviour {
                     GameObject buildingPlaced = Instantiate(cursorPointSelectedBuilding, worldPosition, Quaternion.identity);
                     buildingPlaced.transform.SetParent(this.transform);
                     currentNode.SetIsEmpty(false);
+                
                     RemoveCursorContents();
                 }
             }

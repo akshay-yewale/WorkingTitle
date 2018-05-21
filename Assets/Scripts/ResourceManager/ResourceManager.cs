@@ -61,4 +61,6 @@ public class BuildingData
     public int UniqueId;
     public GameObject buildingPrefab;
     public Sprite icon;
+    public int BoundVertical;
+    public int BoundHorizantal;
 }

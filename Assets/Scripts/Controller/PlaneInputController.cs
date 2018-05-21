@@ -19,4 +19,13 @@ public class PlaneInputController : MonoBehaviour {
 
         transform.Translate((forwardspeed - translationX) * Time.deltaTime, 0, translationZ);
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Inside OnTriggerEnter");
+        if (other.gameObject.CompareTag("SingleBulletPrefab"))
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
 }
