@@ -8,8 +8,11 @@ namespace Core
     //all the base building will have this script attached.
     public class Base_Structure : MonoBehaviour {
 
+        [SerializeField]
         private float m_health;
+        [SerializeField]
         private Enum_BuildingType e_BuildingType;
+        [SerializeField]
         private int i_Level;
 
         public int Level
@@ -45,6 +48,11 @@ namespace Core
             return IsStanding();
         }
     
+        void Initialize(){
+            //Get Data from Server to set the data. 
+
+        }
+
         // run this test for data validation
         public void CustomUnitTest()
         {
