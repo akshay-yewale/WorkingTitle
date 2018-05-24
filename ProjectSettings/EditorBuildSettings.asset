@@ -11,3 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Developers/Harshel/Base 1.unity
     guid: ef73c64606e80f149a4782e206880ace
+  - enabled: 1
+    path: Assets/Developers/Harshel/BaseEditor.unity
+    guid: d21de00f74fb93d43a137ef5e5724231
+  - enabled: 1
+    path: Assets/Developers/Harshel/AttackLoadingScreen 1.unity
+    guid: e10df7a38f4a27444adac02e56b8118e
+  - enabled: 1
+    path: Assets/Developers/Harshel/AttackScene 1.unity
+    guid: 924e936403391d948a5f5d8f976d0246
