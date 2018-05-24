@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/Game Scenes/BaseBuilding.unity
-    guid: 000800ab0dbf04a4cb1f06549726dade
+    path: Assets/Developers/Harshel/LoadingScreen 1.unity
+    guid: bebdfff99daa5d94cb5b9d3e01223da5
   - enabled: 1
-    path: Assets/_Scenes/Test Scene/BlankTemplatePlaneAttack.unity
-    guid: 801bdd2bb7a712740bcbae09c7d8a8f0
+    path: Assets/Developers/Harshel/Base 1.unity
+    guid: ef73c64606e80f149a4782e206880ace
